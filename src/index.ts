@@ -1,6 +1,7 @@
-const add = (a: number, b: number) => a + b;
-const subtract = (a: number, b: number) => a - b;
-const multiply = (a: number, b: number) => a * b;
-const divide = (a: number, b: number) => a / b;
+import { add, string } from "./maths";
 
-export { add, subtract, multiply, divide };
+console.log("Bun says hi");
+console.log(`bun says 5+5=? ${add(5, 5)}`);
+console.log(`bun says hello world=? ${string("gello", "world")}`);
+console.log(process.env.PROJECT_NAME);
+
